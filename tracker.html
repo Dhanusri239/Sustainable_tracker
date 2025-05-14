@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tracker | Sustainable Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>♻️ Track Your Sustainability</h2>
+    <form id="dataForm">
+      <input type="number" id="waterUsage" placeholder="Water used (L)" required />
+      <input type="number" id="electricityUsage" placeholder="Electricity used (kWh)" required />
+      <input type="number" id="carbonFootprint" placeholder="Carbon footprint (kg CO₂)" required />
+      <button type="submit">Save Data</button>
+    </form>
+    <canvas id="usageChart" width="400" height="200"></canvas>
+    <br>
+    <button onclick="location.href='display.html'">📋 View All Entries</button>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
